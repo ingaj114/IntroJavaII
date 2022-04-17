@@ -2,13 +2,15 @@ package com.company.assign;
 
 public class Circle implements Shape {
 
-    @Override
-    public void perimeter(double sideA, double sideB, double sideC, double height) { //length as radius, sideB 0, sideC 0, height 0
-        System.out.println("The perimeter of circle is " + 2 * Math.PI * sideA);
-    }
+    public double radius;
 
-    @Override
-    public void area(double sideA, double sideB, double sideC, double height) { //length as radius, sideB 0, sideC 0, height 0
-        System.out.println("The area of circle is " + Math.PI * Math.pow(sideA,2));
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    public double perimeter() {
+        return 2 * Math.PI * radius;
+    }
+    public double area() {
+        return Math.PI * Math.pow(radius,2);
     }
 }
