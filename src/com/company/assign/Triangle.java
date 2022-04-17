@@ -21,8 +21,7 @@ public class Triangle implements Shape {
     }
 
     public double area() {
-        if (a + base > b && base + b > a && b + a > base) { // side + side > base
             return (base * h)/2;
-        } return 0;
     }
+
 }
